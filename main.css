@@ -24,11 +24,17 @@ body {
     background-color: #3c4855;
 }
 .header-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center;    
     background-color:#2a2c39;
     padding: 10px 20px;
+    
 }
 
 
@@ -41,6 +47,7 @@ body {
 .header-nav {
     list-style: none;
     display: flex;
+    
 }
 
 
@@ -74,8 +81,7 @@ body {
     justify-content: space-between;
     color:#fff;
     padding: 10px 20px;
-    margin-left: 180px;
-    margin-right: 110px;
+    margin: 40px 110px 0px 180px;
    }
 
 .home-content .home-title {
@@ -196,6 +202,69 @@ h1,h2,h3 {
     display: flex;
     flex-direction: row;    
 }
+.skills-wrapper{
+    background-color: #1f2a35;
+    color: #fff;
+    display: flex;
+    justify-content: top;
+    align-items: center;
+    height: 100vh;
+    display: flex;
+    flex-direction:column;
+}
+.skills-content {
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.title {
+    font-size: 40px;
+    margin: 60px 0px 120px;
+    letter-spacing: 2px;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2e3b47;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+.skill span {    
+    font-size: 20px;
+}
+
+.progress-bar {
+    flex: 1;
+    margin: 0 1rem;
+    background-color: #3c4855;
+    border-radius: 5px;
+    height: 8px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress {
+    background-color: #00f7d2;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+}
+
+.percentage {
+    flex-basis: 10%;
+    text-align: right;
+    font-size: 0.9rem;
+}
 .contact-section {
     display: flex;
     justify-content: space-between;
@@ -230,7 +299,6 @@ h1,h2,h3 {
 .social-icon img {
     width: 40px;
     height: 40px;
-    filter: invert(1);
     transition: transform 0.3s ease;
 }
 
@@ -283,71 +351,4 @@ h1,h2,h3 {
 
 .contact-form button:hover {
     background-color: #777;
-}
-.skills-wrapper{
-    font-family: Arial, sans-serif;
-    background-color: #1f2a35;
-    color: #00f7d2;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-.skills-content {
-    width: 80%;
-    max-width: 800px;
-    text-align: center;
-}
-
-.title {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    letter-spacing: 2px;
-}
-
-.skills {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.skill {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #2e3b47;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-}
-
-.skill span {
-    flex-basis: 15%;
-    font-size: 0.9rem;
-}
-
-.progress-bar {
-    flex: 1;
-    margin: 0 1rem;
-    background-color: #3c4855;
-    border-radius: 5px;
-    height: 8px;
-    overflow: hidden;
-    position: relative;
-}
-
-.progress {
-    background-color: #00f7d2;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: 5px;
-}
-
-.percentage {
-    flex-basis: 10%;
-    text-align: right;
-    font-size: 0.9rem;
 }
