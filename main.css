@@ -346,64 +346,182 @@ footer{
     font-size: 20px;    
 }
 
-@media (max-width: 1200px) {
-    .home-wrapper {
-        margin: 40px 10px 0;
+/* Responsive Adjustments */
+/* Existing styles above... */
+
+/* Mobile-First Design for Better Responsiveness */
+@media (max-width: 768px) {
+    /* Header */
+    .header-wrapper {
         flex-direction: column;
         align-items: center;
     }
-    .about-wrapper {
-        padding: 60px 10px;
-    }
-    .header-nav a {
-        font-size: 14px;
-    }
-}
 
-@media (max-width: 768px) {
-    .header-wrapper {
-        flex-wrap: wrap;
-        padding: 10px;
-    }
-    .header-wrapper .logo {
-        font-size: 20px;
-    }
     .header-nav {
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
         padding-top: 10px;
     }
-    .home-title,
-    .home-names {
+
+    .header-nav li {
+        margin-left: 0;
+    }
+
+    /* Home Section */
+    .home-wrapper {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 10px;
+    }
+
+    .home-content {
         text-align: center;
     }
-    .project-title h1 {
-        font-size: 32px;
+
+    .home-title, .home-names {
+        font-size: 24px;
+    }
+
+    .home-content p {
+        font-size: 18px;
+    }
+
+    .home-portrait {
+        margin-top: 20px;
+    }
+
+    /* About Section */
+    .about-wrapper {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .about-title {
+        font-size: 28px;
         text-align: center;
     }
+
+    .about-content {
+        font-size: 18px;
+        margin-left: 0;
+    }
+
+    /* Projects Section */
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    .project-card img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Skills Section */
+    .skills-wrapper {
+        padding: 20px;
+    }
+
     .skills-content {
         width: 100%;
     }
+
+    .skill span {
+        font-size: 16px;
+    }
+
+    .progress-bar {
+        height: 6px;
+    }
+
+    /* Contact Section */
     .contact-section {
         flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .contact-left, .contact-right {
+        width: 100%;
+    }
+
+    .contact-left h2 {
+        font-size: 24px;
+    }
+
+    .contact-left p {
+        font-size: 16px;
+    }
+
+    .contact-form input, .contact-form textarea {
+        font-size: 14px;
+    }
+
+    .contact-form button {
+        width: 100%;
     }
 }
 
 @media (max-width: 480px) {
-    .btn {
-        padding: 10px 20px;
-        margin-right: 0;
+    /* Header */
+    .header-wrapper {
+        padding: 10px 5px;
     }
+
+    .header-nav a {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+    
+    /* Home Section */
     .home-title {
+        font-size: 20px;
+    }
+
+    .home-names {
         font-size: 24px;
     }
-    .home-names {
-        font-size: 32px;
-    }
+
+    /* About Section */
     .about-title {
-        font-size: 32px;
-        text-align: center;
+        font-size: 24px;
     }
+
+    .about-content {
+        font-size: 16px;
+    }
+
+    /* Project Section */
+    .project-card {
+        padding: 10px;
+    }
+
     .project-card img {
-        height: 150px;
+        height: auto;
     }
+
+    /* Contact Section */
+    .contact-left h2 {
+        font-size: 20px;
+    }
+
+    .contact-left p {
+        font-size: 14px;
+    }
+
+    .contact-form label {
+        font-size: 14px;
+    }
+}
+
+/* Footer */
+footer {
+    font-size: 14px;
+    padding: 10px 0;
 }
